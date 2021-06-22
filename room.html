@@ -28,6 +28,50 @@
                     </a>
                 </div>
             </header>
+
+            <main>
+                <section id="question-form">
+                    <h2>Faça sua pergunta</h2>
+                    <form action="">
+                        <label for-id="question" class="sr-only">O que você quer perguntar?</label>
+                        <textarea name="question" id="question" placeholder="O que você quer perguntar?"></textarea>
+                        
+                        <footer>
+                            <div>
+                                <img src="assets/lock.svg" alt="Cadeado">
+                                Esta pergunta é anônima
+                            </div>
+                            <button>Enviar</button>
+                        </footer>
+                    </form>
+                </section>
+
+                <section id="questions">
+                    <h2 class="sr-only">Perguntas da comunidade</h2>
+                    <div class="questions">
+                        <div class="question-wrapper">
+                            <div class="question-content">
+                                <div class="user">
+                                    <img src="assets/avatar.svg" alt="Avatar">
+                                </div>
+                                <div class="question">
+                                    <p>Qual a diferença entre const, var e let no javascript?</p>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <a href="#" class="check">
+                                    <img src="assets/check.svg" alt="Marcar">
+                                    Marcar como lida
+                                </a>
+                                <a href="#" class="delete">
+                                    <img src="assets/trash.svg" alt="Deletar">
+                                    Excluir
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
         </div>    
     </body>
 </html>

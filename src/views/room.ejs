@@ -10,21 +10,23 @@
         <link rel="stylesheet" href="styles/room.css">
         <link rel="stylesheet" href="styles/modal.css">
 
+        <script src="scripts/main.js" defer type="module"></script>
+
     </head>
     <body>
         <div id="room" class="content">
             <header>
                 <a href="#">
-                    <img src="assets/logo.svg" alt="Rocket.Q Logo">
+                    <img src="images/logo.svg" alt="Rocket.Q Logo">
                 </a>
 
                 <div class="buttons">
-                    <div class="button outlined">
+                    <div class="button outlined" id="room-id" data-id="323243">
                         #323243
-                        <img src="assets/copy.svg" alt="Copiar">
+                        <img src="images/copy.svg" alt="Copiar">
                     </div>
                     <a href="#" class="button">
-                        <img src="assets/users-light.svg" alt="Criar sala">
+                        <img src="images/users-light.svg" alt="Criar sala">
                         Criar Sala
                     </a>
                 </div>
@@ -39,7 +41,7 @@
                         
                         <footer>
                             <div>
-                                <img src="assets/lock.svg" alt="Cadeado">
+                                <img src="images/lock.svg" alt="Cadeado">
                                 Esta pergunta é anônima
                             </div>
                             <button>Enviar</button>
@@ -53,19 +55,19 @@
                         <div class="question-wrapper">
                             <div class="question-content">
                                 <div class="user">
-                                    <img src="assets/user.svg" alt="user">
+                                    <img src="images/user.svg" alt="user">
                                 </div>
                                 <div class="question">
                                     <p>Qual a diferença entre const, var e let no javascript?</p>
                                 </div>
                             </div>
                             <div class="actions">
-                                <a href="#" class="check">
-                                    <img src="assets/check.svg" alt="Marcar">
+                                <a href="#" class="check" data-id="2">
+                                    <img src="images/check.svg" alt="Marcar">
                                     Marcar como lida
                                 </a>
-                                <a href="#" class="delete">
-                                    <img src="assets/trash.svg" alt="Deletar">
+                                <a href="#" class="delete" data-id="2">
+                                    <img src="images/trash.svg" alt="Deletar">
                                     Excluir
                                 </a>
                             </div>
@@ -74,7 +76,7 @@
                         <div class="question-wrapper">
                             <div class="question-content">
                                 <div class="user">
-                                    <img src="assets/user.svg" alt="user">
+                                    <img src="images/user.svg" alt="user">
                                 </div>
                                 <div class="question">
                                     <p>Você já sabe quais bases você precisa melhorar para alcancar o seu próximo nível com maestria?
@@ -84,12 +86,12 @@
                                 </div>
                             </div>
                             <div class="actions">
-                                <a href="#" class="check">
-                                    <img src="assets/check.svg" alt="Marcar">
+                                <a href="#" class="check" data-id="3">
+                                    <img src="images/check.svg" alt="Marcar">
                                     Marcar como lida
                                 </a>
-                                <a href="#" class="delete">
-                                    <img src="assets/trash.svg" alt="Deletar">
+                                <a href="#" class="delete" data-id="3">
+                                    <img src="images/trash.svg" alt="Deletar">
                                     Excluir
                                 </a>
                             </div>
@@ -98,19 +100,19 @@
                         <div class="question-wrapper">
                             <div class="question-content">
                                 <div class="user">
-                                    <img src="assets/user.svg" alt="user">
+                                    <img src="images/user.svg" alt="user">
                                 </div>
                                 <div class="question">
                                     <p>O que é javascript?</p>
                                 </div>
                             </div>
                             <div class="actions">
-                                <a href="#" class="check">
-                                    <img src="assets/check.svg" alt="Marcar">
+                                <a href="#" class="check" data-id="4">
+                                    <img src="images/check.svg" alt="Marcar">
                                     Marcar como lida
                                 </a>
-                                <a href="#" class="delete">
-                                    <img src="assets/trash.svg" alt="Deletar">
+                                <a href="#" class="delete" data-id="4">
+                                    <img src="images/trash.svg" alt="Deletar">
                                     Excluir
                                 </a>
                             </div>
@@ -119,15 +121,15 @@
                         <div class="question-wrapper read">
                             <div class="question-content">
                                 <div class="user">
-                                    <img src="assets/user.svg" alt="user">
+                                    <img src="images/user.svg" alt="user">
                                 </div>
                                 <div class="question">
                                     <p>O que é typescript?</p>
                                 </div>
                             </div>
                             <div class="actions">
-                                <a href="#" class="delete">
-                                    <img src="assets/trash.svg" alt="Deletar">
+                                <a href="#" class="delete" data-id="1">
+                                    <img src="images/trash.svg" alt="Deletar">
                                     Excluir
                                 </a>
                             </div>
@@ -142,12 +144,12 @@
                 <h2>Excluir Pergunta</h2>
                 <p>Tem certeza que você deseja escluir essa pergunta?</p>
 
-                <form action="#">
+                <form action="#" method="POST">
                     <label class="sr-only" for-id="password">Digite sua senha admin</label>
                     <input type="password" id="password" name="password" placeholder="Digite sua senha">
                 
                     <div class="buttons">
-                        <div class="button grey">Cancelar</div>
+                        <div class="button grey cancel">Cancelar</div>
                         <button class="red">Sim, excluir</button>
                     </div>
                 </form>

@@ -1,3 +1,6 @@
+import darkMode from './dark-mode';
+darkMode()
+
 import Modal from './modal.js';
 
 const modal = Modal()
@@ -37,3 +40,5 @@ function handleClick(event, check = true) {
 
     modal.open()
 }
+
+
